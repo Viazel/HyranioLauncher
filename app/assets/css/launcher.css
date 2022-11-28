@@ -1088,7 +1088,7 @@ body, button {
 
 /* Navigation header styles. */
 #settingsNavHeader {
-    height: 15%;
+    height: 8%;
     display: flex;
     justify-content: center;
 }
@@ -1114,6 +1114,7 @@ body, button {
 
 /* Navigation item shared styles. */
 .settingsNavItem {
+    font-size: 1.2rem;
     background: none;
     border: none;
     text-align: left;
@@ -1143,7 +1144,7 @@ body, button {
 /* Content container for the done button. */
 #settingsNavContentBottom {
     position: absolute;
-    top: 65%;
+    bottom: 30px;
 }
 
 /* Settings navigational divider. */
@@ -1152,7 +1153,7 @@ body, button {
     height: 1px;
     background: rgba(126, 126, 126, 0.57);
     margin-left: auto;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 /* Settings done button styles. */
@@ -2482,7 +2483,9 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer > #lower {
     position: absolute;
     display: flex;
-    bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
     width: 100%;
 }
 #landingContainer > #lower > #left {
@@ -2504,17 +2507,18 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer > #lower > #center {
     position: relative;
     transition: top 2s ease;
-    top: 0px;
     height: 100%;
-    width: 34%;
+    width: 500px;
     display: inline-flex;
     justify-content: center;
 }
 #landingContainer > #lower > #center #content {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 500;
     transition: top 2s ease;
-    top: 10px;
 }
 #landingContainer > #lower > #right {
     position: relative;
@@ -2856,7 +2860,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Logo image. */
 #image_seal {
-    height: 70px;
+    height: 130px;
     width: auto;
     position: relative;
     box-sizing: border-box;
@@ -2866,10 +2870,11 @@ input:checked + .toggleSwitchSlider:before {
 /* Logo container styles. */
 #image_seal_container {
     position: relative;
-    height: 70px;
-    width: 70px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     margin-top: 50px;
+    left: 40px;
 }
 
 /* Logo container styles w/ update. */
@@ -2899,7 +2904,7 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-    width: 100px;
+    width: 160px;
     height: 15px;
     background-color: rgb(0, 0, 0);
     color: #fff;
@@ -2910,7 +2915,7 @@ input:checked + .toggleSwitchSlider:before {
     z-index: 1;
     top: 115%;
     left: -17.5px;
-    font-family: 'Avenir Medium';
+    font-family: 'Avenir Medium', sans-serif;
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
@@ -3963,4 +3968,16 @@ input:checked + .toggleSwitchSlider:before {
 /* Class which is applied when the spinner image is spinning. */
 .rotating {
     animation: rotating 10s linear infinite;
+}
+
+#launch_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
